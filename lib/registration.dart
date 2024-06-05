@@ -1,9 +1,9 @@
 import 'dart:convert';
+
+import 'package:email_validator/email_validator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/models/loginUser.dart';
-import 'package:email_validator/email_validator.dart';
 import 'package:flutter_application_1/show.dart';
-
 import 'package:google_fonts/google_fonts.dart';
 import 'package:http/http.dart' as http;
 
@@ -143,7 +143,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 style: TextStyle(fontSize: 16),
                 onChanged: (value) {},
                 decoration: InputDecoration(
-                    label: Text('photo url'),
+                    label: Text('Roll'),
                     icon: Icon(Icons.picture_in_picture_outlined),
                     hintText: 'Enter photo',
                     hintStyle: TextStyle(color: Colors.grey))),
